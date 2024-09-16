@@ -3,6 +3,10 @@ layout: default
 title: AyMeeko
 selected_nav: "/"
 ---
-<div id="landing-page" class="center">
-	<div>o7</div>
+<div class="posts blog">
+	{% for post in site.categories.blog limit:1 %}
+		<div class="row">
+			{% include post_template.html date=post.date title=post.title content=post.content %}
+		</div>
+	{% endfor %}
 </div>
