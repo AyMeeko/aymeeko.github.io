@@ -1,2 +1,33 @@
 .blog {
+  .post-list {
+    margin-top: 5px;
+  }
+
+  .row {
+    margin-bottom: 30px;
+  }
+}
+
+.post {
+  figure {
+    max-width: 100%;
+    margin: 5 auto;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+      margin-top: 5px;
+    }
+  }
+}
+
+#blog-archive {
+  li {
+    list-style: none;
+  }
 }
