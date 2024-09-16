@@ -1,0 +1,44 @@
+body {
+  margin-bottom: 40px;
+  font-family: $body-font;
+  background-color: $background;
+}
+
+.with-nav {
+  padding-top: 65px;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $hover_link;
+}
+
+p {
+  line-height: 1.4em;
+  font-size: 1em;
+  color: $text;
+}
+
+hr {
+  border-top: 1px solid $hr;
+  margin: 2rem;
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#landing-page {
+  font-size: 2em;
+  img {
+    width: 60%;
+  }
+}

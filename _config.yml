@@ -1,0 +1,10 @@
+title: AyMeeko
+email: aymeeko13@gmail.com
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+root_url: "/"
+url: https://aymeeko.github.io
+baseurl: ""
+
+plugins:
+  - jekyll-sitemap

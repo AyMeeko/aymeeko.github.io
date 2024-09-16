@@ -1,0 +1,118 @@
+@mixin link {
+  a {
+    color: $nav_link;
+    padding: 0px 5px 0px 5px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $nav_hover_link;
+    border-bottom: 2px solid $nav_border_bottom_link_hover;
+  }
+
+  a.selected {
+    border-bottom: 2px solid $nav_border_bottom_link_selected;
+  }
+}
+
+.name {
+  float: left;
+  font-size: 3em;
+  margin-left: 10px;
+  font-family: $header_font, sans-serif;
+  font-weight: 700;
+
+  @include link;
+}
+
+nav {
+  height: 55px;
+  padding-bottom: 10px;
+  font-size: .8em;
+  background: $background;
+  z-index: 2;
+  position: fixed;
+
+
+  ul {
+    float: right;
+    margin-bottom: 0px;
+    line-height: 55px;
+    font-weight: bold;
+    list-style: none;
+
+    @include link;
+  }
+
+  ul li {
+    display: inline;
+    font-size: 2.2em;
+    margin: 0 5px;
+    font-family: $header_font;
+  }
+}
+
+footer {
+  font-size: .8em;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 35px;
+  width: 100%;
+  background: $background;
+  line-height: 35px;
+
+  ul {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+
+    @include link;
+  }
+
+  ul li {
+    text-align: center;
+    margin: 0 5px;
+    display: inline;
+  }
+  ul li a {
+    color: $ul_li_link;
+  }
+}
+
+@media (max-width: 599px) {
+  nav {
+    height: 84px;
+
+    .name {
+      float: unset;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0px -100px 0px 0px;
+    }
+
+    div a {
+      border-bottom: 2px solid $nav_border_bottom_link_hover;
+    }
+
+    ul {
+      float: unset;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30px;
+      margin: 15px -130px 0px 0px;
+    }
+
+    ul li {
+      font-size: 1.5em;
+      margin: 0px;
+    }
+  }
+
+  .container {
+    padding-top: 100px;
+  }
+};

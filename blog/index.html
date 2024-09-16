@@ -1,0 +1,13 @@
+---
+layout: default
+title: Some might consider this a blog
+selected_nav: /blog/
+---
+
+<div class="posts blog">
+	{% for post in site.categories.blog limit:5 %}
+		<div class="row">
+			{% include post_template.html date=post.date title=post.title content=post.content %}
+		</div>
+	{% endfor %}
+</div>
