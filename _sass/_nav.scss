@@ -1,12 +1,12 @@
 @mixin link {
   a {
-    color: var(--link-color);
+    color: var(--header-link-color);
     padding: 0px 5px 0px 5px;
   }
 
   a:hover {
     text-decoration: none;
-    color: var(--link-hover-color);
+    color: var(--header-link-hover-color);
     border-bottom: 2px solid var(--nav-border-bottom-link-hover);
   }
 
@@ -32,7 +32,6 @@ nav {
   background: var(--main-background-color);
   z-index: 2;
   position: fixed;
-
 
   ul {
     float: right;

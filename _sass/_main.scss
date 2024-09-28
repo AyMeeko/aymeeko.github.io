@@ -1,50 +1,60 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
 html, html[data-theme="dark"] {
-  --main-background-color: #24273a;
-  --main-text-color: #cad3f5;
-  --link-color: #ee99a0;
-  --link-hover-color: #8bd5ca;
-  --hr-color: #494d64;
-  --nav-border-bottom-link-selected: #8aadf4;
-  --nav-border-bottom-link-hover: #494d64;
-  --code-background: #181926;
-  --list-item-marker: #ee99a0;
+  --main-background-color: var(--ctp-macchiato-base);
+  --main-text-color: var(--ctp-macchiato-text);
+  --header-link-color: var(--ctp-macchiato-maroon);
+  --header-link-hover-color: var(--ctp-macchiato-teal);
+  --link-color: var(--ctp-macchiato-maroon);
+  --link-hover-color: var(--ctp-macchiato-teal);
+  --hr-color: var(--ctp-macchiato-surface1);
+  --nav-border-bottom-link-selected: var(--ctp-macchiato-blue);
+  --nav-border-bottom-link-hover: var(--ctp-macchiato-surface1);
+  --code-background: var(--ctp-macchiato-crust);
+  --list-item-marker: var(--ctp-macchiato-maroon);
 }
 
 html, html[data-theme="light"] {
-  --main-background-color: #EEE9F2;
-  --main-text-color: rgb(30,3,45);
-  --link-color: #1E032D;
-  --link-hover-color: #1E032D;
-  --hr-color: #B764E5;
-  --nav-border-bottom-link-selected: #4E0F70;
-  --nav-border-bottom-link-hover: #B764E5;
-  --code-background: rgb(183,100,229,.4);
-  --list-item-marker: rgb(30,3,45);
+  --main-background-color: var(--ctp-latte-base);
+  --main-text-color: var(--ctp-latte-text);
+  --header-link-color: var(--ctp-latte-maroon);
+  --header-link-hover-color: var(--ctp-latte-blue);
+  --link-color: var(--ctp-latte-maroon);
+  --link-hover-color: var(--ctp-latte-teal);
+  --hr-color: var(--ctp-latte-surface1);
+  --nav-border-bottom-link-selected: var(--ctp-latte-blue);
+  --nav-border-bottom-link-hover: var(--ctp-latte-surface1);
+  --code-background: var(--ctp-latte-crust);
+  --list-item-marker: var(--ctp-latte-maroon);
 }
 
 @media (prefers-color-scheme: dark) {
   html, html[data-theme="dark"] {
-    --main-background-color: #24273a;
-    --main-text-color: #cad3f5;
-    --link-color: #ee99a0;
-    --link-hover-color: #8bd5ca;
-    --hr-color: #494d64;
-    --nav-border-bottom-link-selected: #8aadf4;
-    --nav-border-bottom-link-hover: #494d64;
-    --code-background: #181926;
-    --list-item-marker: #ee99a0;
+    --main-background-color: var(--ctp-macchiato-base);
+    --main-text-color: var(--ctp-macchiato-text);
+    --header-link-color: var(--ctp-macchiato-maroon);
+    --header-link-hover-color: var(--ctp-macchiato-teal);
+    --link-color: var(--ctp-macchiato-maroon);
+    --link-hover-color: var(--ctp-macchiato-teal);
+    --hr-color: var(--ctp-macchiato-surface1);
+    --nav-border-bottom-link-selected: var(--ctp-macchiato-blue);
+    --nav-border-bottom-link-hover: var(--ctp-macchiato-surface1);
+    --code-background: var(--ctp-macchiato-crust);
+    --list-item-marker: var(--ctp-macchiato-maroon);
   }
 
   html[data-theme="light"] {
-    --main-background-color: #EEE9F2;
-    --main-text-color: rgb(30,3,45);
-    --link-color: #1E032D;
-    --link-hover-color: #1E032D;
-    --hr-color: #B764E5;
-    --nav-border-bottom-link-selected: #4E0F70;
-    --nav-border-bottom-link-hover: #B764E5;
-    --code-background: rgb(183,100,229,.4);
-    --list-item-marker: rgb(30,3,45);
+    --main-background-color: var(--ctp-latte-base);
+    --main-text-color: var(--ctp-latte-text);
+    --header-link-color: var(--ctp-latte-maroon);
+    --header-link-hover-color: var(--ctp-latte-blue);
+    --link-color: var(--ctp-latte-maroon);
+    --link-hover-color: var(--ctp-latte-teal);
+    --hr-color: var(--ctp-latte-surface1);
+    --nav-border-bottom-link-selected: var(--ctp-latte-blue);
+    --nav-border-bottom-link-hover: var(--ctp-latte-surface1);
+    --code-background: var(--ctp-latte-crust);
+    --list-item-marker: var(--ctp-latte-maroon);
   }
 }
 
