@@ -10,7 +10,7 @@
   ul, li {
     list-style-type: square;
     ::marker {
-      color: $list_item_marker;
+      color: var(--list-item-marker);
     }
   }
 }
@@ -40,6 +40,6 @@
 }
 
 code {
-  background: $code_background;
+  background: var(--code-background);
   font-family: $code_font;
 }

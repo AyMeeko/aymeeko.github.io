@@ -1,8 +1,58 @@
+html, html[data-theme="dark"] {
+  --main-background-color: #24273a;
+  --main-text-color: #cad3f5;
+  --link-color: #ee99a0;
+  --link-hover-color: #8bd5ca;
+  --hr-color: #494d64;
+  --nav-border-bottom-link-selected: #8aadf4;
+  --nav-border-bottom-link-hover: #494d64;
+  --code-background: #181926;
+  --list-item-marker: #ee99a0;
+}
+
+html, html[data-theme="light"] {
+  --main-background-color: #EEE9F2;
+  --main-text-color: rgb(30,3,45);
+  --link-color: #1E032D;
+  --link-hover-color: #1E032D;
+  --hr-color: #B764E5;
+  --nav-border-bottom-link-selected: #4E0F70;
+  --nav-border-bottom-link-hover: #B764E5;
+  --code-background: rgb(183,100,229,.4);
+  --list-item-marker: rgb(30,3,45);
+}
+
+@media (prefers-color-scheme: dark) {
+  html, html[data-theme="dark"] {
+    --main-background-color: #24273a;
+    --main-text-color: #cad3f5;
+    --link-color: #ee99a0;
+    --link-hover-color: #8bd5ca;
+    --hr-color: #494d64;
+    --nav-border-bottom-link-selected: #8aadf4;
+    --nav-border-bottom-link-hover: #494d64;
+    --code-background: #181926;
+    --list-item-marker: #ee99a0;
+  }
+
+  html[data-theme="light"] {
+    --main-background-color: #EEE9F2;
+    --main-text-color: rgb(30,3,45);
+    --link-color: #1E032D;
+    --link-hover-color: #1E032D;
+    --hr-color: #B764E5;
+    --nav-border-bottom-link-selected: #4E0F70;
+    --nav-border-bottom-link-hover: #B764E5;
+    --code-background: rgb(183,100,229,.4);
+    --list-item-marker: rgb(30,3,45);
+  }
+}
+
 body {
   margin-bottom: 40px;
   font-family: $body_font;
-  background-color: $background;
-  color: $text;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
   line-height: 1.6em;
   font-size: 1.8em;
 }
@@ -13,16 +63,16 @@ body {
 
 a {
   text-decoration: none;
-  color: $link;
+  color: var(--link-color);
 }
 
 a:hover {
   text-decoration: none;
-  color: $hover_link;
+  color: var(--link-hover-color);
 }
 
 hr {
-  border-top: 1px solid $hr;
+  border-top: 1px solid var(--hr-color);
   margin: 2rem;
 }
 

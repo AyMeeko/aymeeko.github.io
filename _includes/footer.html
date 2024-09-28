@@ -6,5 +6,7 @@
 	{% if page.selected_nav == '/blog/' or layout.selected_nav == '/blog/' %}
 		<li><a href="/archive/"><i class="fas fa-list fa-lg"></i></a></li>
 	{% endif%}
+	<li><a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()"></a></li>
   </ul>
+  <script src="/scripts/theme-switcher.js"></script>
 </footer>
