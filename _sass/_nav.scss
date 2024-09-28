@@ -1,12 +1,12 @@
 @mixin link {
   a {
-    color: $nav_link;
+    color: $link;
     padding: 0px 5px 0px 5px;
   }
 
   a:hover {
     text-decoration: none;
-    color: $nav_hover_link;
+    color: $hover_link;
     border-bottom: 2px solid $nav_border_bottom_link_hover;
   }
 
@@ -19,7 +19,7 @@
   float: left;
   font-size: 3em;
   margin-left: 10px;
-  font-family: $header_font, sans-serif;
+  font-family: $header_font;
   font-weight: 700;
 
   @include link;
@@ -27,8 +27,8 @@
 
 nav {
   height: 55px;
+  line-height: 55px;
   padding-bottom: 10px;
-  font-size: .8em;
   background: $background;
   z-index: 2;
   position: fixed;
@@ -46,7 +46,6 @@ nav {
 
   ul li {
     display: inline;
-    font-size: 2.2em;
     margin: 0 5px;
     font-family: $header_font;
   }
@@ -77,7 +76,7 @@ footer {
     display: inline;
   }
   ul li a {
-    color: $ul_li_link;
+    color: $link;
   }
 }
 

@@ -6,6 +6,13 @@
   .row {
     margin-bottom: 30px;
   }
+
+  ul, li {
+    list-style-type: square;
+    ::marker {
+      color: $list_item_marker;
+    }
+  }
 }
 
 .post {
@@ -30,4 +37,9 @@
   li {
     list-style: none;
   }
+}
+
+code {
+  background: $code_background;
+  font-family: $code_font;
 }

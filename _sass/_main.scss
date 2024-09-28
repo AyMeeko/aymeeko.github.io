@@ -1,7 +1,10 @@
 body {
   margin-bottom: 40px;
-  font-family: $body-font;
+  font-family: $body_font;
   background-color: $background;
+  color: $text;
+  line-height: 1.6em;
+  font-size: 1.8em;
 }
 
 .with-nav {
@@ -16,12 +19,6 @@ a {
 a:hover {
   text-decoration: none;
   color: $hover_link;
-}
-
-p {
-  line-height: 1.4em;
-  font-size: 1em;
-  color: $text;
 }
 
 hr {
@@ -41,4 +38,8 @@ hr {
   img {
     width: 60%;
   }
+}
+
+ul ul {
+  font-size: 100%;
 }
