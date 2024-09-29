@@ -81,7 +81,9 @@ Below is a `flake.nix` file which defines an Intel-based macOS system.
   description = "Kickstart Nix on macOS";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs = {
+      url = "github:NixOS/nixpkgs/nixos-24.05";
+    },
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -107,7 +109,9 @@ Below is a `flake.nix` file which defines an Intel-based macOS system.
         in
           nix-darwin.lib.darwinSystem {
             inherit system;
-            specialArgs = { inherit inputs username; };
+            specialArgs = {
+              inherit inputs username;
+            };
             modules = [
               ./module/darwin-configuration.nix
               home-manager.darwinModules.home-manager
@@ -117,7 +121,10 @@ Below is a `flake.nix` file which defines an Intel-based macOS system.
                 home-manager.extraSpecialArgs = {
                   inherit inputs;
                 };
-                home-manager.users."${username}" = { pkgs, ... }: {
+                home-manager.users."${username}" = {
+                  pkgs,
+                  ...
+                }: {
                   imports = [
                     ./host/amy.nix
                     ./module/home-manager.nix

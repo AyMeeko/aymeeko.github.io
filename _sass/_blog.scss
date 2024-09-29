@@ -42,4 +42,13 @@
 code {
   background: var(--code-background);
   font-family: $code_font;
+  width: fit-content;
+  font-size: 80%;
+  line-height: 1.6em;
 }
+
+@media (max-width: 599px) {
+  code {
+    font-size: 70%;
+  }
+};
