@@ -3,10 +3,8 @@
     <a href="mailto:aymeeko13@gmail.com"><i class="fas fa-envelope fa-lg"></i></a>
     <a href="https://github.com/aymeeko"><i class="fab fa-github fa-lg"></i></a>
 	<a href="https://twitter.com/AyMeeko"><i class="fab fa-twitter"></i></a>
-	{% if page.selected_nav == '/blog/' or layout.selected_nav == '/blog/' %}
-		<a href="/archive/"><i class="fas fa-list fa-lg"></i></a>
-	{% endif%}
 	<a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()"></a>
+	<a href="/archive/"><i class="fas fa-list fa-lg"></i></a>
   </div>
   <script src="/scripts/theme-switcher.js"></script>
 </footer>
